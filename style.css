@@ -1,0 +1,38 @@
+
+
+h1{
+    justify-content: center;
+    
+    
+}
+
+.Miclass {
+    color: brown;
+    display: flex;
+    align-items: center;
+    
+}
+
+.Miclase1{
+    color: blue;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.div1{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card img{
+    width: 500px;
+    height: 300px;
+}

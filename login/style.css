@@ -1,0 +1,107 @@
+@import url(‘https://fonts.googleapis.com/css2?family=Dosis:wght@200;500;800&display=swap’);
+/* font-family: ‘Dosis’, sans-serif; */
+
+@import url(https://fonts.google.com/specimen/Montserrat?query=montse&vfonly=true);
+/* font-family: ‘Montserrat’, sans-serif; */
+@import url(‘https://fonts.googleapis.com/css2?family=Satisfy&display=swap’);
+/* font-family: ‘Satisfy’, cursive; */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/background.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardform{
+    width: 450px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, .7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.cardinfo{
+    width: 450px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardinfo h1{
+    font-family: Satisfy, cursive;   
+    color: white;
+    font-size: 50px;
+
+}
+.cardinfo h3{
+    color: white;
+    font-size: 25px;
+    font-family: Montserrat, sans-serif;
+
+}
+ .cardinfo p{
+    color: white;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
+    
+}
+.cardform h4{
+    color: blue;
+    font-weight: 100;
+}
+.input_user img{
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    background-color: white;
+
+}
+.input_pass img{
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 5px ;
+}
+
+.input_user inpusts{
+    height: 30px;
+    width: 200px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 100px;
+
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 100px;
+
+}
