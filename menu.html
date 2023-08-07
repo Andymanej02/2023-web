@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Sostenible</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url(./login/assets/3u26_sog0_220224.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            position: relative;
+            background: url('nombre_turismo.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 10px 0;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3483eb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centrado vertical */
+        }
+
+        .column {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Arial Black', sans-serif;
+            font-style: italic;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #f95c05;
+            font-size: 48px;
+            animation: moveTitle 2s infinite alternate;
+        }
+
+        h2 {
+            color: #3483eb;
+            font-size: 36px;
+        }
+
+        h3 {
+            color: #0e8f08;
+            font-size: 24px;
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+        }
+
+        p, ul {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .medium-img {
+            max-width: 300px;
+        }
+
+        @keyframes moveTitle {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(10px);
+            }
+        }
+
+        /* Nuevos estilos para la barra de promociones */
+        .promotions-bar {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 160px;
+            background: #fff;
+            box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            z-index: 1000;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .promotions-bar h3 {
+            margin: 0;
+            color: #f95c05;
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 16px;
+        }
+
+        .promotions-bar p {
+            color: #333;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        .promotions-bar ul {
+            padding: 0;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .promotions-bar ul li {
+            margin-bottom: 3px;
+            color: #333;
+            font-size: 12px;
+        }
+
+        .schedule-button {
+            display: block;
+            margin-top: 15px;
+            background: #f95c05;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 6px 10px;
+            font-size: 12px;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .barra-button:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        /* Estilos para los iconos */
+        .icon {
+            max-width: 40px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Cambios para el texto específico */
+        .green-text {
+            color: #0e8f08;
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+        }
+
+        /* Estilos para el marco de imágenes de países turísticos */
+        .countries-frame {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .country-box {
+            width: 120px;
+            text-align: center;
+        }
+
+        .country-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .country-name {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="background-image: url(./login/assets/37130.jpg); background-size: cover;">Turismo<span class="green-text"> Sostenible</span></h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Destinos</a>
+        <a href="#">Actividades</a>
+        <a href="#">Alojamiento</a>
+        <a href="#">Contacto</a>
+        <a href="#">USD</a>
+        <a href="#">Help & Support</a>
+        <a href="#">Sign In</a>
+    </nav>
+    <div class="container">
+        <h2 class="green-text">Bienvenido a nuestro sitio de Turismo Sostenible</h2>
+        <p class="green-text">Descubre increíbles destinos y experiencias sostenibles para tus próximas vacaciones.</p>
+        <img class="medium-img" src="./login/assets/6345959.jpg" alt="Destino Turístico">
+        <h3 class="green-text">Explora Nuestros Destinos</h3>
+        <img class="big-img" src="./login/assets/2023166.jpg" alt="Icono Destinos">
+        <p class="green-text">Sumérgete en la belleza natural de nuestros destinos sostenibles, donde la conservación del medio ambiente es nuestra prioridad.</p>
+        <ul class="green-text">
+            <li>Playas vírgenes de arena blanca</li>
+            <li>Reservas naturales exuberantes</li>
+            <li>Aventuras en la montaña</li>
+        </ul>
+        <h3 class="green-text"> Experiencias Sostenibles</h3>
+        <p class="green-text"><img src= "./login/assets/4012084.jpg" alt="Icono Actividades">Únete a nuestras actividades comprometidas con la sostenibilidad y el respeto por las culturas locales:</p>
+        <ul class="green-text">
+            <li>Senderismo ecológico</li>
+            <li>Buceo responsable</li>
+            <li>Gastronomía local</li>
+        </ul>
+        <h3 class="green-text">Opciones de Alojamiento</h3>
+        <p class="green-text"><img src="./login/assets/19197690.jpg" alt="Icono Alojamiento"> Disfruta de estadías cómodas y sostenibles en armonía con la naturaleza:</p>
+        <ul class="green-text">
+            <li>Eco-lodges rodeados de biodiversidad</li>
+            <li>Cabañas en la playa con energía solar</li>
+            <li>Hoteles boutique con enfoque en la sostenibilidad</li>
+        </ul>
+        <!-- Marco de imágenes de países turísticos -->
+        <div class="countries-frame">
+            <div class="country-box">
+                <img src="./login/assets/banderas-espana.jpg" alt="Spain">
+                <p class="country-name">España</p>
+            </div>
+            <div class="country-box">
+                <img src="./login/assets/bandera-francia.jpg" alt="France">
+                <p class="country-name">Francia</p>
+            </div>
+            <div class="country-box">
+                <img src="./login/assets/italia(1).jpeg" alt="Italy">
+                <p class="country-name">Italia</p>
+            </div>
+            <div class="country-box">
+                <img src="./login/assets/Japon.jpeg" alt="Japan">
+                <p class="country-name">Japón</p>
+            </div>
+            <div class="country-box">
+                <img src="./login/assets/thailand.jpeg" alt="Thailand">
+                <p class="country-name">Tailandia</p>
+            </div>
+            <div class="country-box">
+                <img src="./login/assets/brazil).jpeg" alt="Brazil">
+                <p class="country-name">Brasil</p>
+            </div>
+            <div class="country-box">
+                <img src="./login/assets/australia.jpeg" alt="Australia">
+                <p class="country-name">Australia</p>
+            </div>
+            <div class="country-box">
+                <img src="./login/assets/canada.jpeg" alt="Canada">
+                <p class="country-name">Canadá</p>
+            </div>
+        </div>
+    </div>
+    <!-- Barra de promociones en el lado derecho -->
+    <div class="promotions-bar">
+        <h3><img src="./login/assets/318714-P94SWT-174.jpg" alt="Icono Actividades">¡Ofertas Especiales!</h3>
+        <p>No te pierdas estas increíbles promociones.</p>
+        <ul>
+            <li>Descuento en aventuras en la montaña</li>
+            <li>Paquete de buceo + alojamiento</li>
+            <li>Tour gastronómico a precio especial</li>
+        </ul>
+        <a href="#" class="barra-button">¡Agenda Ahora!</a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

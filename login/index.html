@@ -6,6 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> 
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos adicionales */
+        .cardinfo p {
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 16px;
+            color: #356c92;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .cardform h4 {
+            font-family: 'Verdana', sans-serif;
+            font-size: 16px;
+            color: #f95c05;
+            background-color: #fff;
+            padding: 5px 10px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 160px;
+            position: relative;
+            animation: moveText 3s infinite alternate; /* Movimiento automático */
+        }
+
+        .cardform h4:hover {
+            animation: shake 0.5s;
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            10%, 30%, 50%, 70%, 90% {
+                transform: translateX(-5px);
+            }
+            20%, 40%, 60%, 80% {
+                transform: translateX(5px);
+            }
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(5px);
+            }
+        }
+
+        .cardinfo h1,
+        .cardinfo h3 {
+            font-family: 'Comic Sans MS', cursive;
+            color: #356c92;
+            text-align: center;
+            margin-top: 10px;
+            animation: moveText 2s infinite alternate;
+        }
+
+        .cardform {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centrar horizontalmente */
+            margin-top: 20px; /* Aumentar el margen superior */
+        }
+
+        .cardform .input_user,
+        .cardform .input_pass {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .cardform .input_user img,
+        .cardform .input_pass img {
+            width: 25px; /* Aumentar el tamaño de las imágenes */
+            height: 25px; /* Añadir altura */
+            margin-right: 10px;
+            border: none; /* Quitar el borde */
+            border-radius: 50%; /* Cambiar a forma ovalada */
+            background-color: #fff; /* Agregar fondo blanco */
+            padding: 5px; /* Añadir espacio interior */
+        }
+
+        .cardform input[type="inputs"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px; /* Aumentar el ancho */
+            font-style: italic;
+        }
+
+        .cardform input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .cardform button {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            background-color: #f95c05;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .cardform button:hover {
+            background-color: #f17435;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -13,17 +126,14 @@
             <div class="card_main">
                 <div class="cardinfo">
                     <h1>Welcome</h1>
-                    <h3> to the website</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                     assumenda quia neque hic quasi mollitia minima sunt amet laborum, ducimus architecto beatae.</p>
-                    
+                    <h3> to Turismo Unac</h3>
+                    <p style="font-size: 14px; color: #549bb9;">Explora destinos increíbles y sumérgete en experiencias únicas de turismo sostenible. Descubre la belleza de la naturaleza y las culturas locales.</p>
                 </div>
                 <div class=" cardform">
-                    <h4> USER LOGIN
-                    </h4>
+                    <h4>USER LOGIN</h4>
                     <div class="input_user">
                         <img src="./assets/user-svgrepo-com.svg" alt="user">
-                        <input type="inputs" placeholder="username">
+                        <input type="inputs" placeholder="Username">
                     </div>
                     <div class="input_pass">
                         <img src="./assets/password-lock-svgrepo-com.svg" alt="password">
@@ -35,11 +145,16 @@
                     </div>
                     <button class="btn">LOGIN</button>
                 </div>
-
             </div>
-
         </div>
     </main>
-    
 </body>
 </html>
+
+
+
+
+
+
+
+
